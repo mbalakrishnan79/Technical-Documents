@@ -1,0 +1,7 @@
+MongoDB connection
+==================
+spark-submit --class com.bala.mongo.SparkWithMongo.ReadFromMongoDB --master local[2] --jars C:\Bala\EPE_POC\tmp\mongo-spark-connector_2.11-2.0.0.jar,C:\Bala\EPE_POC\tmp\spark-core_2.11-2.0.0.jar,C:\Bala\EPE_POC\tmp\spark-sql_2.11-2.0.0.jar,C:\Bala\EPE_POC\tmp\mongo-java-driver-3.2.2.jar C:\Bala\workspace\SparkWithMongo\target\SparkWithMongo-0.0.1-SNAPSHOT.jar
+
+PostgreSQL connection
+=====================
+spark-submit --class com.bala.rdbms.SparkWithPostgreSQL.ReadFromPostgreSQL --master local[2] --jars C:\Bala\EPE_POC\tmp\postgresql-9.4.1212.jar,C:\Bala\EPE_POC\tmp\spark-core_2.11-2.0.0.jar,C:\Bala\EPE_POC\tmp\spark-sql_2.11-2.0.0.jar,C:\Bala\EPE_POC\tmp\postgresql-9.4.1208-jdbc42-atlassian-hosted.jar C:\Bala\workspace\SparkWithPostgreSQL\target\SparkWithMongo-0.0.1-SNAPSHOT.jar
